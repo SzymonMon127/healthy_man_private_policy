@@ -1,6 +1,6 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1; font-family: arial;}
-h1{font-size: 20px;}h2{font-size: 21px;}h3{font-size: 18px;}h4{font-size: 16px;}
+h1{font-size: 25px;}h2{font-size: 21px;}h3{font-size: 18px;}h4{font-size: 16px;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 nav ul{list-style:none}
 blockquote,q{quotes:none}
@@ -160,20 +160,28 @@ a{
 
 .card{
   width: 90vmin;
-  height: 110vmin;
+  height: 55vmin;
   display: flex;
   box-shadow: 0 30px 40px -15px rgba(0,0,0,0.35);
   background-color: #fff;
 }
 
+.card__img{
+  background-position: center;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-
-
+#img01{
+  background-image: url("./images/me_profil_picture.jpg");
+}
 
 .card__content{
   padding: 10% 5%;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
 }
 
 .card__content-theme{
@@ -184,7 +192,7 @@ a{
 .card__content-header{
   font-weight: 900;
   font-size: 54px;
-  font-size: 3vmin;
+  font-size: 7vmin;
   text-transform: capitalize;
   letter-spacing: 0.01em;
   line-height: 0.91;
@@ -219,3 +227,52 @@ a{
 }
 }
 
+table{
+border-collapse: collapse;
+margin: 25px auto;
+font-size: 0.9em;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+thead tr {
+  background: #FF7F50;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+thead tr  th{
+  text-align: center;
+}
+th,
+td {
+  padding: 12px 15px;
+}
+tbody tr td{
+  position: relative;
+
+  }
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+  
+    }
+  tbody tr:nth-of-type(even) {
+    background: #f3f3f3;
+  }
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #FF7F50;
+  }
+.flex_container{
+  display:flex;
+}
+.flex_container p {
+  margin: 60px;
+}
+.center a{
+  color:#000;
+  text-align:center;
+  text-decoration: underline;
+  font-size: 12px;
+  margin-top: 8px;
+}
